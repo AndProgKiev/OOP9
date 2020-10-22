@@ -1,0 +1,8 @@
+public class ListRunner {
+    public static void main(String[] args) {
+        ListCriate list=new ListCriate();
+        list.addAndDelete();
+        System.out.println(list.toString());
+
+    }
+}
