@@ -1,0 +1,38 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListCriate {
+  private List<Integer> list=new ArrayList();
+
+  public ListCriate(List<Integer> list) {
+    this.list = list;
+  }
+
+  public ListCriate() {
+    for (int i = 1; i <=10 ; i++) {
+      list.add(i);
+    }
+  }
+
+  public List<Integer> getList() {
+    return list;
+  }
+
+  public void setList(List<Integer> list) {
+    this.list = list;
+  }
+
+  public void addAndDelete(){
+    list.remove(0);
+    list.remove(0);
+    list.remove(7);
+
+  }
+  @Override
+  public String toString() {
+    return "ListCriate{" +
+            "list=" + list.toString() +
+            '}';
+  }
+}
